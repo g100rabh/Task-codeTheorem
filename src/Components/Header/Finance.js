@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdUnfoldMore } from "react-icons/md";
-import { staticData } from "../../assests/headerData";
+import { staticData } from "./headerData";
 
 import classes from "./Finance.module.css";
 

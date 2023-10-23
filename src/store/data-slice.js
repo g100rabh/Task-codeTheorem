@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { ProjectLists } from "../assests/ProjectLists";
+import { ProjectLists } from "../Components/Projects/ProjectLists";
 
 const initialState = {
   formVisible: false,

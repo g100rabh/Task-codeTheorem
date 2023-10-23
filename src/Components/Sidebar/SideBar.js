@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./SideBar.module.css";
-import logo from "../../assests/Logo.jpg";
+import logo from "../../assests/Logo.png"
 import SideNav from "./SideNav";
 import LowerNav from "./LowerNav";
 
