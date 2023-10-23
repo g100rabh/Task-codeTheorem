@@ -36,6 +36,9 @@ const ProjectForm = () => {
   };
 
   const saveItemHandler = () => {
+      if(nameInputRef.current.value.length == 0 || customerInputRef.current.value.length == 0 || amtInputRef.current.value.length == 0){
+          alert("Please enter all input filled correctly.");
+      }
     const date = new Date(dateInputRef.current.value);
 
     const monthAbbreviation = monthNames[date.getMonth()];
