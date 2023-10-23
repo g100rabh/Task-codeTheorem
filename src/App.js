@@ -12,9 +12,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Main />} />
-        {data.formVisible && <ProjectForm />}
+
         <Route path="/viewdetails" element={<ViewProject />} />
       </Routes>
+      {data.formVisible && <ProjectForm />}
     </div>
   );
 }
