@@ -1,5 +1,3 @@
-
-
 .sideCon {
   width: 15vw;
   flex-shrink: 0;
@@ -15,7 +13,7 @@
 }
 
 .logo {
-    height: 10vh;
+  height: 10vh;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -25,37 +23,33 @@
 }
 
 .logo img {
-<<<<<<< HEAD
-    all: unset;
-    z-index: initial;
-=======
   all: unset;
->>>>>>> 2c33ec0fe90b57d0161baf6d5803b55d033053f1
+  z-index: initial;
   width: 120px;
   height: 29.446px;
   padding: 0 1rem 2.5rem 1rem;
 }
 
 @media (max-width: 768px) {
-    .sideCon {
-      width: 100%; 
-      justify-content: center; 
-    }
+  .sideCon {
+    width: 100%;
+    justify-content: center;
   }
-  
+}
+
 @media (max-width: 576px) {
-    .sideCon {
-        width: 100%; 
-        justify-content: center; 
-    }
+  .sideCon {
+    width: 100%;
+    justify-content: center;
+  }
 
-    .logo {
-        margin-top: 1rem; 
-    }
+  .logo {
+    margin-top: 1rem;
+  }
 
-    .logo img {
-        width: 100px; 
-        height: auto; 
-        padding: 0.5rem; 
-    }
+  .logo img {
+    width: 100px;
+    height: auto;
+    padding: 0.5rem;
+  }
 }
