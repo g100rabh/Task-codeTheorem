@@ -1,0 +1,48 @@
+.modal {
+    box-shadow: 0 5px 25px 2px rgba(161, 208, 240, 0.6);
+    position: fixed;
+    background-color: white;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    height: 50vh;
+    border-radius: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity 1.3s ease-in;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+.content {
+    align-items: center;
+    
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media (max-width: 1200px){
+    .modal{
+    width: auto;
+      left: calc(10% - 20rem);
+    }
+
+}
+
+@media (max-width: 576px){
+    .modal{
+        margin-top: 20%;
+        margin-right: -5%;
+    }
+
+}

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../../assests/Gilroy-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../../assests/Gilroy-Medium.ttf") format("truetype");
+}
+
+.sidenav {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0.5rem;
+}
+
+.sidenav li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0px 12px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  margin: 0 0 8px -32px;
+  color: #767676;
+  font-family: Gilroy-Regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activeNav {
+  background: rgba(13, 173, 141, 0.1) !important;
+  color: var(--Primary-Green, #1cd2ad) !important;
+  font-family: Gilroy-SemiBold !important;
+}
+
+.sidenav li:hover {
+  cursor: pointer;
+  background-color: #767676;
+  color: aliceblue;
+}
+
+.sidenav span {
+  font-size: 14px !important;
+}
+
+@media (max-width: 768px) {
+    .sidenav {
+      height: auto;
+    }
+    
+    .sidenav li {
+      font-size: 16px;
+    }
+    
+    .activeNav {
+      font-family: Gilroy-SemiBold;
+    }
+  }

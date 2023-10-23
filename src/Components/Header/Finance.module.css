@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../../assests/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../../assests/Gilroy-SemiBold.ttf") format("truetype");
+}
+
+.financeCon {
+  margin: 1rem;
+  font-family: Gilroy-Regular;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cardCon {
+  display: flex;
+  margin: 1rem 0 0 -2rem;
+  gap: 1.5rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.heading span {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  padding: 8px 8px 8px 12px;
+  gap: 4px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cardCon li {
+  list-style: none;
+  width: 18rem;
+  height: 116px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+.gain {
+  color: #1cd2ad;
+}
+.loss {
+  color: rgb(233, 105, 105);
+}
+
+.cardFin {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cardFin > * {
+  margin: 0;
+}
+
+.cardFin span {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0 1rem 0 1rem;
+  font-size: 0.9rem;
+}
+.cardCon p {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  margin-top: -1rem;
+  color: rgb(170, 165, 165);
+}
+.iconFin {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.heading h3 {
+  color: var(--White, #fff);
+  font-family: Gilroy-SemiBold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+
+.cardFin h2 {
+    font-weight: bold;
+}
+.cardFin text,p {
+    font-weight: bold;
+}
+.cardFin p{
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) { 
+    .cardCon{
+        flex-direction: column;
+    }   
+}

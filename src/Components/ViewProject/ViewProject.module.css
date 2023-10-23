@@ -1,0 +1,19 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .detailsCon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 90vh;
+  }

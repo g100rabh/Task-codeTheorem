@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from "react-redux";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import ProjectForm from "./Components/Projects/ProjectForm";
+import Main from "./Components/UI/Main";
+import ViewProject from "./Components/ViewProject/ViewProject.js";
 
 function App() {
+  const data = useSelector((state) => state.data);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        {data.formVisible && <ProjectForm />}
+        <Route path="/viewdetails" element={<ViewProject />} />
+      </Routes>
     </div>
   );
 }

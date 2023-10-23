@@ -1,0 +1,13 @@
+.maincon {
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.5rem;
+
+}
