@@ -25,8 +25,12 @@
 }
 
 .logo img {
+<<<<<<< HEAD
     all: unset;
     z-index: initial;
+=======
+  all: unset;
+>>>>>>> 2c33ec0fe90b57d0161baf6d5803b55d033053f1
   width: 120px;
   height: 29.446px;
   padding: 0 1rem 2.5rem 1rem;
